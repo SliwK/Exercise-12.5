@@ -29,16 +29,17 @@ function createTweet(input) {
     getQuote();
     } else {
         var tweet = tweetLink + encodeURIComponent(tweetText);
-        $('.quote').text(quoteText);
-        $('.author').text("Author: " + quoteAuthor);
-        $('.tweet').attr('href', tweet);
+        $(".quote").text(quoteText);
+        $(".author").text("Author: " + quoteAuthor);
+        $(".tweet").attr("href", tweet);
     }
+
 }
 
 //cytat na wejście
 $(document).ready(function() {
     getQuote();
-    $('.trigger').click(function() {
+    $(".trigger").click(function() {
         getQuote();
     });
 });
