@@ -8,6 +8,8 @@ var quoteUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&fi
 //pobieranie cytatu
 function getQuote() {
     $.getJSON(quoteUrl, createTweet);
+    $.getJSON(prefix + quoteUrl, createTweet);
+    $.ajaxSetup({ cache: false });
 }
 
 //tworzenie tweeta
