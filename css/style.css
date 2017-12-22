@@ -1,0 +1,27 @@
+body {
+  background-color: #55ACEE;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0; }
+
+.container {
+  margin: 0auto;
+  padding: 20px;
+  text-align: center;
+  width: 800px; }
+  .container h1 {
+    font-size: 50px;
+    text-align: center; }
+  .container .box {
+    padding: 60px 40px;
+    text-align: center; }
+  .container .trigger, .container .tweet {
+    border: solid 1px white;
+    border-radius: 3px;
+    background-color: #55ACEE;
+    display: block;
+    height: 30px;
+    margin: 20px auto;
+    width: 350px; }
+
+/*# sourceMappingURL=style.css.map */
