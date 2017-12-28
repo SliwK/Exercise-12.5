@@ -19,12 +19,13 @@ body {
     border: solid 1px white;
     border-radius: 3px;
     background-color: #55ACEE;
+    color: white;
     display: block;
+    font-size: 20px;
     height: 30px;
     margin: 20px auto;
-    width: 350px; }
-  .container .tweet {
-    color: white;
-    padding: 3px 0; }
+    padding: 3px 0;
+    width: 350px;
+    text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

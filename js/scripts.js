@@ -1,4 +1,5 @@
 // scripts.js
+
 var prefix = "https://cors-anywhere.herokuapp.com/";
 
 var tweetLink = "https://twitter.com/intent/tweet?text=";
@@ -7,9 +8,13 @@ var quoteUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&fi
 
 //pobieranie cytatu
 function getQuote() {
-    $.getJSON(quoteUrl, createTweet);
     $.getJSON(prefix + quoteUrl, createTweet);
     $.ajaxSetup({ cache: false });
+    $.ajaxSetup({
+        error: function () {
+          alert("BŁĄD / ERROR!!");
+        }
+      });
 }
 
 //tworzenie tweeta
